@@ -8,7 +8,8 @@
 import GAMES_DATA from './games.js';
 
 // create a list of objects to store the data about the games using JSON.parse
-const GAMES_JSON = JSON.parse(GAMES_DATA)
+const GAMES_JSON = JSON.parse(GAMES_DATA);
+console.log(GAMES_JSON)
 
 // remove all child elements from a parent element in the DOM
 function deleteChildElements(parent) {
@@ -29,6 +30,7 @@ const gamesContainer = document.getElementById("games-container");
 function addGamesToPage(games) {
 
     // loop over each item in the data
+    // const game just gives a number to reference each key in th object e.g (games[game] = games[0] or games[1])
     for (const game in games) {
        
     
@@ -44,16 +46,17 @@ function addGamesToPage(games) {
         // TIP: if your images are not displaying, make sure there is space
         // between the end of the src attribute and the end of the tag ("/>")
         gameDiv.innerHTML = `
-        <img class="game-image" src="${game.img}">
-        <p>${game.name}</p>
-        <p>${game.description}</p>
+          <img class="game-image" src="${games[game].img}">
+            <p>${games[game].name}</p>
+            <p>${games[game].description}</p>
         `;
-
+        console.log(game)
 
         // append the game to the games-container
         gamesContainer.appendChild(gameDiv);
     };
 }
+console.log(GAMES_JSON.name);
 addGamesToPage(GAMES_JSON);
 
 // call the function we just defined using the correct variable
