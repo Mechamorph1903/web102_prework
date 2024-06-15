@@ -45,7 +45,7 @@ function addGamesToPage(games) {
         // TIP: if your images are not displaying, make sure there is space
         // between the end of the src attribute and the end of the tag ("/>")
         gameDiv.innerHTML = `
-          <img class="game-image" src="${games[game].img}">
+          <img class="game-img" src="${games[game].img}">
             <p>${games[game].name}</p>
             <p>${games[game].description}</p>
         `;
@@ -54,7 +54,7 @@ function addGamesToPage(games) {
         // append the game to the games-container
         gamesContainer.appendChild(gameDiv);
     };
-}gt
+}
 addGamesToPage(GAMES_JSON);
 
 // call the function we just defined using the correct variable
