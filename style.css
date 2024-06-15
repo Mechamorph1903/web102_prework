@@ -73,3 +73,8 @@ button {
     margin: 1%;
     border-radius: 7px;
 }
+
+.stats-container {
+    display: flex;
+    align-items: stretch;
+}
