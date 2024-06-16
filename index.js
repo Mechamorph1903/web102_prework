@@ -189,3 +189,36 @@ firstGameContainer.appendChild(firstGame);
 const secondGame = document.createElement('p');
 secondGame.innerHTML = `${name2}`;
 secondGameContainer.appendChild(secondGame);
+
+
+//search bar
+const searchBar = document.getElementById("search");
+const searchForm = document.getElementById("searchForm")
+function searchOnly() {
+    deleteChildElements(gamesContainer);
+    const index = searchBar.value.trim();
+    const searchGames = (searchTerm) => {
+    return GAMES_JSON.filter(game => game.name.toLowerCase().includes(searchTerm.toLowerCase()));}
+    // add all games from the JSON data to the DOM
+ 
+    const searchedGames = searchGames(index);
+    if (searchedGames.length !== 0) {
+        addGamesToPage(searchedGames);
+    } else {
+      const noVal = document.createElement('p');
+      noVal.innerHTML = `No game matches for search term "${searchBar.value}"`; 
+      gamesContainer.appendChild(noVal) 
+    }
+    
+    ;
+    
+    
+
+}
+//Searches on Submission
+searchForm.addEventListener('submit', function(e){
+    e.preventDefault();
+    searchOnly()});
+
+//Automatically searches on input
+searchBar.addEventListener("input", searchOnly)
