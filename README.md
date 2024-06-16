@@ -1,10 +1,10 @@
-# WEB102 Prework - *Name of App Here*
+# WEB102 Prework - Sea Monster Crowdfunding
 
-Submitted by: **Your Name Here**
+Submitted by: Daniel Anorue
 
-**Name of your app** is a website for the company Sea Monster Crowdfunding that displays information about the games they have funded.
+SeaMonster CrowdFunding is a website for the company Sea Monster Crowdfunding that displays information about the games they have funded.
 
-Time spent: **X** hours spent in total
+Time spent: **6** hours spent in total
 
 ## Required Features
 
@@ -36,9 +36,11 @@ GIF created with ...
 
 Describe any challenges encountered while building the app.
 
+The hardest parts would be working on the section dealing with destructuring and creating the search functionality. The example given wasn't consistent with the accepted syntax which led me to research for myself. As for the search, it took a lot of research and trial and error to achieve the desired functionality.
+
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2024] [CodePath]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
