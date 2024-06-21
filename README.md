@@ -17,7 +17,7 @@ The following **required** functionality is completed:
 
 The following **optional** features are implemented:
 
-* [x] List anything else that you can get done to improve the app functionality!
+* [x] List anything else that you can get done to improve the app functionality! - I added a search feature that allows users search for specific games
 
 ## Video Walkthrough
 
